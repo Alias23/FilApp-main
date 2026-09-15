@@ -1,0 +1,58 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp">
+
+    <!-- Contenido de la tarjeta -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Agrega aquí los elementos que deseas mostrar en cada tarjeta -->
+
+            <TextView
+                android:id="@+id/nombreArchivo"
+                android:layout_width="198dp"
+                android:layout_height="63dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerArchivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imagenTarjeta"
+                android:layout_width="68dp"
+                android:layout_height="63dp"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@drawable/pdf_file_icon" />
+
+
+            <!-- Agrega más elementos según tus necesidades -->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ejecutarArchivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
